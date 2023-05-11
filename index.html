@@ -1,50 +1,106 @@
+
+
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Steve's Academic Website</title>
-
-    <!-- Add Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
-    <!-- Add custom CSS -->
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-
-        .header {
-            background-color: #343a40;
-            color: white;
-            padding: 20px;
-        }
-
-        .container {
-            padding: 50px;
-        }
-    </style>
+	<title>My Personal Website</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Add Bootstrap CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<!-- Add custom CSS -->
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+			font-size: 20px;
+		}
+		header {
+			background-color: #343a40;
+			color: white;
+			padding: 20px;
+			font-size:33px;
+		}
+		.container {
+			padding: 50px;
+		}
+		table {
+			border-collapse: collapse;
+			width: 100%;
+			margin-bottom: 1rem;
+			background-color: transparent;
+			color: #212529;
+		}
+		th {
+			padding: .75rem;
+			vertical-align: top;
+			border-top: 1px solid #dee2e6;
+		}
+		td {
+			padding: .75rem;
+			vertical-align: top;
+			border-top: 1px solid #dee2e6;
+		}
+	</style>
 </head>
 <body>
-    <header class="header">
-        <h1>Steve's Academic Website</h1>
-    </header>
-
+	<header>
+		<div class="container">
+			<h1>My Personal Website</h1>
+			<nav>
+				<ul>
+					<!-- Links to subpages -->
+					<li><a href="#">About Me</a></li>
+					<li><a href="#">My Projects</a></li>
+					<li><a href="#">My Notes</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
     <div class="container">
         <h2>About Me</h2>
         <p>
-            My name is Steve, and I am an undergraduate student at the University of Texas.
+            I am an undergraduate student studying Mathematics at Peking University. I am passionate about machine learning, scientific computing and their real-world application.
         </p>
 
-        <h2>Resume</h2>
-        <p>
-            You can view my resume <a href="resume.pdf" target="_blank">here</a>.
-        </p>
-    </div>
+        <h2>Personal Information</h2>
+        <table>
+            <tr>
+                <th>Age:</th>
+                <td>18</td>
+            </tr>
+            <tr>
+                <th>Hometown:</th>
+                <td>Changchun, China</td>
+            </tr>
+            <tr>
+                <th>Likes:</th>
+                <td>Programming, reading</td>
+            </tr>
+            <tr>
+                <th>Dislikes:</th>
+                <td>Spicy food, crowded places</td>
+            </tr>
+        </table>
+
+        <div class="project">
+            <h2>Projects</h2>
+            <p>Here are some of the projects I have worked on:</p>
+            <ul>
+                <li>Project 1: <a href="#">Link to project 1</a></li>
+                <li>Project 2: <a href="#">Link to project 2</a></li>
+                <li>Project 3: <a href="#">Link to project 3</a></li>
+            </ul>
+        </div>
+
+        <div class="interest">
+            <h2>Interests</h2>
+            <p>Some of my interests include:</p>
+            <ul>
+                <li>Interest 1</li>
+                <li>Interest 2</li>
+                <li>Interest 3</li>
+            </ul>
+        </div>
 </body>
-</html>
